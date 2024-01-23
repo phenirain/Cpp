@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <Windows.h>
+// -*- coding: utf-8 -*-
 
 using namespace std;
 
