@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <Windows.h>
 
 using namespace std;
 
@@ -21,7 +22,6 @@ public:
             }
             catch (const invalid_argument& e) {
                 cin.clear(); 
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cout << e.what() << endl;
                 i--;
             }
@@ -32,7 +32,7 @@ public:
 };
 
 int main() {
-    system("chcp1251");
+    SetConsoleCP(1251);
     setlocale(LC_ALL, "ru");
     bool work = true;
     do {
@@ -53,7 +53,6 @@ int main() {
         double* numbers;
         switch (atoi(operation.c_str())) {
         case 1: {
-            // Вызываем функцию для ввода двух чисел
             numbers = Calculator::getNums(2);
             cout << numbers[0] << " + " << numbers[1] << " = " << numbers[0] + numbers[1] << endl;
             cout << endl;
