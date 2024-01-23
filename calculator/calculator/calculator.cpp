@@ -34,7 +34,7 @@ public:
 
 int main() {
     SetConsoleCP(1251);
-    setlocale(LC_ALL, "ru");
+    setlocale(LC_ALL, "Rus");
     bool work = true;
     do {
         cout << "Выберите операцию:" << endl;
