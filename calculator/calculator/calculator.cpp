@@ -32,6 +32,7 @@ public:
 };
 
 int main() {
+    system("chcp1251");
     setlocale(LC_ALL, "ru");
     bool work = true;
     do {
