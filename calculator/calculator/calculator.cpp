@@ -13,12 +13,12 @@ public:
     static double* getNums(int numCount) {
         double* numbers = new double[numCount];
         for (int i = 0; i < numCount; i++) {
-            cout << "Введите " << i + 1 << " число: ";
+            cout << "Р’РІРµРґРёС‚Рµ " << i + 1 << " С‡РёСЃР»Рѕ: ";
 
             try {
                 cin >> numbers[i];
                 if (cin.fail()) {
-                    throw invalid_argument("Вы должны ввести именно число!");
+                    throw invalid_argument("Р’С‹ РґРѕР»Р¶РЅС‹ РІРІРµСЃС‚Рё РёРјРµРЅРЅРѕ С‡РёСЃР»Рѕ!");
                 }
             }
             catch (const invalid_argument& e) {
@@ -37,17 +37,17 @@ int main() {
     setlocale(LC_ALL, "Rus");
     bool work = true;
     do {
-        cout << "Выберите операцию:" << endl;
-        cout << "1. Сложить 2 числа" << endl;
-        cout << "2. Вычесть второе из первого" << endl;
-        cout << "3. Перемножить два числа" << endl;
-        cout << "4. Разделить первое на второе" << endl;
-        cout << "5. Возвести в степень N первое число" << endl;
-        cout << "6. Найти квадратный корень из числа" << endl;
-        cout << "7. Найти 1 процент от числа" << endl;
-        cout << "8. Найти факториал из числа" << endl;
-        cout << "9. Выйти из программы" << endl << endl;
-        cout << "Ваша команда: ";
+        cout << "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г®ГЇГҐГ°Г Г¶ГЁГѕ:" << endl;
+        cout << "1. Г‘Г«Г®Г¦ГЁГІГј 2 Г·ГЁГ±Г«Г " << endl;
+        cout << "2. Г‚Г»Г·ГҐГ±ГІГј ГўГІГ®Г°Г®ГҐ ГЁГ§ ГЇГҐГ°ГўГ®ГЈГ®" << endl;
+        cout << "3. ГЏГҐГ°ГҐГ¬Г­Г®Г¦ГЁГІГј Г¤ГўГ  Г·ГЁГ±Г«Г " << endl;
+        cout << "4. ГђГ Г§Г¤ГҐГ«ГЁГІГј ГЇГҐГ°ГўГ®ГҐ Г­Г  ГўГІГ®Г°Г®ГҐ" << endl;
+        cout << "5. Г‚Г®Г§ГўГҐГ±ГІГЁ Гў Г±ГІГҐГЇГҐГ­Гј N ГЇГҐГ°ГўГ®ГҐ Г·ГЁГ±Г«Г®" << endl;
+        cout << "6. ГЌГ Г©ГІГЁ ГЄГўГ Г¤Г°Г ГІГ­Г»Г© ГЄГ®Г°ГҐГ­Гј ГЁГ§ Г·ГЁГ±Г«Г " << endl;
+        cout << "7. ГЌГ Г©ГІГЁ 1 ГЇГ°Г®Г¶ГҐГ­ГІ Г®ГІ Г·ГЁГ±Г«Г " << endl;
+        cout << "8. ГЌГ Г©ГІГЁ ГґГ ГЄГІГ®Г°ГЁГ Г« ГЁГ§ Г·ГЁГ±Г«Г " << endl;
+        cout << "9. Г‚Г»Г©ГІГЁ ГЁГ§ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г»" << endl << endl;
+        cout << "Г‚Г ГёГ  ГЄГ®Г¬Г Г­Г¤Г : ";
         string operation;
         cin >> operation;
         cout << endl;
@@ -77,7 +77,7 @@ int main() {
         case 4: {
             numbers = Calculator::getNums(2);
             if (numbers[1] == 0) {
-                cout << "На ноль делить нельзя(" << endl;
+                cout << "ГЌГ  Г­Г®Г«Гј Г¤ГҐГ«ГЁГІГј Г­ГҐГ«ГјГ§Гї(" << endl;
                 cout << endl;
             }
             else {
@@ -98,7 +98,7 @@ int main() {
         case 6: {
             numbers = Calculator::getNums(1);
             double res = sqrt(numbers[0]);
-            cout << "Корень из " << numbers[0] << " = " << res << endl;
+            cout << "ГЉГ®Г°ГҐГ­Гј ГЁГ§ " << numbers[0] << " = " << res << endl;
             cout << endl;
             delete[] numbers;
             break;
@@ -106,7 +106,7 @@ int main() {
         case 7: {
             numbers = Calculator::getNums(1);
             double res = numbers[0] * 0.01;
-            cout << "1% от " << numbers[0] << " = " << res << endl;
+            cout << "1% Г®ГІ " << numbers[0] << " = " << res << endl;
             cout << endl;
             delete[] numbers;
             break;
@@ -119,7 +119,7 @@ int main() {
                 cout << endl;
             }
             else {
-                cout << "Нельзя вычислить факториал из отрицательного числа(" << endl;
+                cout << "ГЌГҐГ«ГјГ§Гї ГўГ»Г·ГЁГ±Г«ГЁГІГј ГґГ ГЄГІГ®Г°ГЁГ Г« ГЁГ§ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г®ГЈГ® Г·ГЁГ±Г«Г (" << endl;
                 cout << endl;
             }
             delete[] numbers;
@@ -127,11 +127,11 @@ int main() {
         }
         case 9: {
             work = false;
-            cout << "Вычисления завершены!" << endl;
+            cout << "Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГї Г§Г ГўГҐГ°ГёГҐГ­Г»!" << endl;
             break;
         }
         default: {
-            cout << "Я не знаю такую команду(" << endl;
+            cout << "Гџ Г­ГҐ Г§Г­Г Гѕ ГІГ ГЄГіГѕ ГЄГ®Г¬Г Г­Г¤Гі(" << endl;
             cout << endl;
             break;
         }
