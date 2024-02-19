@@ -16,6 +16,7 @@ int main()
             sum += n;
         }
     }
+    sum = sum / 15;
     cout << "Average of matrix: " << sum;
     return 0;
 }
