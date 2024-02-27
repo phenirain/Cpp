@@ -1,0 +1,3 @@
+﻿  strings.cpp
+D:\Desktop\College\Programming\CPP\strings\strings\strings.cpp(26,13): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  strings.vcxproj -> D:\Desktop\College\Programming\CPP\strings\x64\Debug\strings.exe
