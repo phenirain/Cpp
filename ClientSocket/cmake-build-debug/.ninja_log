@@ -1,0 +1,14 @@
+# ninja log v5
+3	381	7387056674950656	build.ninja	b284bff6c1a8d17b
+3	823	7385942101676063	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+824	914	7385942102518893	ClientSocket.exe	73b94c924c98ba91
+24	1216	7387064929199862	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+1217	1339	7387064930389133	ClientSocket.exe	73b94c924c98ba91
+4	1021	7387066284878043	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+1021	1125	7387066285866570	ClientSocket.exe	73b94c924c98ba91
+19	1038	7387066467645612	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+1038	1145	7387066468675553	ClientSocket.exe	73b94c924c98ba91
+4	1046	7387068318326274	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+1046	1137	7387068319222463	ClientSocket.exe	73b94c924c98ba91
+36	920	7387105582705058	CMakeFiles/ClientSocket.dir/main.cpp.obj	69af5c2e0d27fd0d
+921	1017	7387105583610828	ClientSocket.exe	73b94c924c98ba91
