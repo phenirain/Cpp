@@ -1,0 +1,3 @@
+D:/Desktop/College/Programming/CPP/eight/main/cmake-build-debug/CMakeFiles/main.dir
+D:/Desktop/College/Programming/CPP/eight/main/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/College/Programming/CPP/eight/main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
